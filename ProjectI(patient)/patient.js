@@ -33,6 +33,7 @@ function displayPaitents() {
             <td>${patient.address}</td>
             <td>${patient.age}</td>
             <td>${patient.diseases}</td>
+            
 
             <td>
                 <button onclick="editPatient(${patient.id})">Edit </button>
