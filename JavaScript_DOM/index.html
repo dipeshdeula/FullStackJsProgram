@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+    <style>
+        .csslevel{
+            color:black;
+
+        }
+        .csslevel2{
+            color:green;
+        }
+    </style>
+<script>
+    //This function runs when the page is fully loaded
+    document.addEventListener('DOMContentLoaded',function(){
+        //select the element by its ID
+        var heading = document.getElementById('heading');
+        console.log(heading);
+        heading.textContent = 'Hello, World!';
+        document.body.style.color='white'
+        document.body.style.background='red';
+
+        //create a new paragraph element
+        var newParagraph = document.createElement('p');
+        console.log(newParagraph);
+        newParagraph.innerHTML="THIS IS A NEW PARAGRAPH BY DOM";
+
+        //Append the new paragraph to the body
+        document.body.appendChild(newParagraph);
+
+        //Add a click event listener to the button
+        var button = document.getElementById('myButton1');
+        console.log(button);
+        button.addEventListener('click',function(){
+            alert('Button clicked!');
+        })
+
+        var element = document.getElementById('divtitle');
+        element.innerHTML='<p>New Contend</p>';
+        element.textContent='New Text Content';
+
+        element.style.color='purple';
+
+        document.body.appendChild(element);
+
+        element.classList.add('csslevel2');
+        //document.getElementById('divtitle').classList.add('csslevel2');
+
+        element.classList.remove('oldClass');
+        element.classList.toggle('active');
+
+        var sum = document.getElementById('sum');
+        sum.addEventListener('click', function() {
+            
+    let value1 = document.getElementById('txtvalue').value;
+    let value2 = document.getElementById('txtvalueTwo').value;
+    let  resultElement = document.getElementById('result');
+    let sum = sumValue(value1, value2); // Use the sumValue function to calculate the sum
+    resultElement.value = sum; // Correctly assign the calculated sum to the result input's value
+});
+
+    const sumValue = (x, y) => parseInt(x) + parseInt(y);
+
+
+    })
+</script>
+</head>
+<body>
+    <div id="divtitle"></div>
+    <h1 id="heading">Original Heading</h1>
+    <button id="myButton" onclick="clickMe()">Click Me!</button>
+    <button id="myButton1">Click Me1!</button>
+    <input type="text" id="txtfields"><br><br>
+    <label for="value1">Value1</label>
+    <input type="text" id="txtvalue"><br><br>
+    <label for="value2">Value2</label>
+    <input type="text" id="txtvalueTwo"><br><br>
+    <label for="result">result</label>
+    <input type="text" id="result" readonly>
+    <button id="sum">Sum</button>
+    <script>
+        //when user used to click on a button click me button then content should be change
+       function clickMe(){
+        var a = document.getElementById('heading').textContent="DIPESH DEULA";
+        console.log(a);
+       }
+
+       
+    </script>
+</body>
+</html>
