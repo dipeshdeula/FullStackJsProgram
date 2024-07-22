@@ -124,6 +124,7 @@ switch(fruit)
 //for loop
 //Defn: Repeats a block of code a specified number of times
 //Example:
+/*
 for(let i=0;i<5;i++)
 {
     console.log("Iteration:"+i);
@@ -145,4 +146,27 @@ let i=0;
 while(i<5){
     console.log("Iteration: "+i);
     i++;
+}
+    */
+
+//Break and continue statements
+//Break St:
+//Defn: Exits a loop or switch statement prematurely
+//Example:
+for(let i=0;i<10;i++)
+{
+    if(i==5){
+        break;
+    }
+    console.log("Iteration: "+i);
+}
+
+//continue statement:
+//Defn: Skips the current iteration of a loop and proceed to the next one
+//Example:
+for(let i=0;i<10;i++){
+    if(i===5){
+        continue;
+    }
+    console.log("Iteration: " +i);
 }
