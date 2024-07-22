@@ -68,6 +68,7 @@ if(number>0)
 //if-else
 //Defn: Executes one block of code if a conditon is true, and another block if it is false.
 //Example
+/*
 let number = -5;
 if(number>0)
 {
@@ -75,4 +76,26 @@ if(number>0)
 }
 else{
     console.log("Negative number");
+}
+    */
+
+//else-if
+//Defn: Specifies a new condition if the first condtion is false.
+//Example:
+let score = 85;
+if(score>=90)
+{
+    console.log("Grade: A");
+}
+else if(score>=80){
+    console.log("Grade: B");
+}
+else if(score>=70){
+    console.log("Grade: C");
+}
+else if(score>=60){
+    console.log("Grade: D")
+}
+else{
+    console.log("Grade: E");
 }
