@@ -57,8 +57,22 @@ else{
 //if condition
 //Defn: Executes a block of code if a specified condition is true.
 //Example
+/*
 let number = 10;
 if(number>0)
 {
     console.log("Positive number");
+}
+    */
+
+//if-else
+//Defn: Executes one block of code if a conditon is true, and another block if it is false.
+//Example
+let number = -5;
+if(number>0)
+{
+    console.log("Positive number");
+}
+else{
+    console.log("Negative number");
 }
