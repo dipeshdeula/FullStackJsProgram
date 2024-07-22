@@ -105,6 +105,7 @@ else{
 //switch
 //Defn: Evaluates an expression and executes code based on matching case.
 //Example
+/*
 let fruit = "apple";
 switch(fruit)
 {
@@ -116,4 +117,32 @@ switch(fruit)
         break;
     default:
         console.log("Unknown fruit");
+}
+        */
+
+//Loops
+//for loop
+//Defn: Repeats a block of code a specified number of times
+//Example:
+for(let i=0;i<5;i++)
+{
+    console.log("Iteration:"+i);
+}
+
+//for in loop
+//Defn: Iterates over the properties of an object
+//Example:
+let person = {name: "Dipesh",age:22,city:"Hetauda"};
+for(let key in person)
+{
+    console.log(key + ":"+person[key]);
+}
+
+//while loop
+//Defn: Repeats a block of code as long as specified condtion is true.
+//Example:
+let i=0;
+while(i<5){
+    console.log("Iteration: "+i);
+    i++;
 }
