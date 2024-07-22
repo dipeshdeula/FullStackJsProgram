@@ -21,6 +21,7 @@ console.log(a==="5");//false
 //operators: &&(logical AND), || (logical OR), !(logical NOt)
 
 //Example
+/*
 let age = 20;
 let hasLicense = true;
 
@@ -48,4 +49,16 @@ if(age>=18 && !hasLicense==true){
 }
 else{
     console.log("you cannot drive");
+}
+    */
+
+//Conditional Statements
+
+//if condition
+//Defn: Executes a block of code if a specified condition is true.
+//Example
+let number = 10;
+if(number>0)
+{
+    console.log("Positive number");
 }
