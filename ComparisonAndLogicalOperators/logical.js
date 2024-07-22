@@ -82,6 +82,7 @@ else{
 //else-if
 //Defn: Specifies a new condition if the first condtion is false.
 //Example:
+/*
 let score = 85;
 if(score>=90)
 {
@@ -98,4 +99,21 @@ else if(score>=60){
 }
 else{
     console.log("Grade: E");
+}
+    */
+
+//switch
+//Defn: Evaluates an expression and executes code based on matching case.
+//Example
+let fruit = "apple";
+switch(fruit)
+{
+    case "banana":
+        console.log("Bananas are yellow.");
+        break;
+    case "apple":
+        console.log("Apples are red");
+        break;
+    default:
+        console.log("Unknown fruit");
 }
