@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Patterns</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--problem 1 rectangle-->
+    <div class="container">
+        <div id="pattern">
+            <h3>Square Pattern</h3>
+            <p id="square"></p>
+            <button onclick="Squarepattern()">Display</button>
+        </div>
+
+        <div id="pattern">
+            <h3>Right Triangle Pattern</h3>
+            <p id="rightTriangle"></p>
+            <button onclick="rigntTriaglepattern()">Display</button>
+        </div>
+        <div id="pattern">
+            <h3>Inverted Right Triangle Pattern</h3>
+            <p id="invertedRight"></p>
+            <button onclick="invertedRightPattern()">Display</button>
+        </div>
+        <div id="pattern">
+            <h3>Pyramid Pattern</h3>
+            <p id="pyramid"></p>
+            <button onclick="pyramidPattern()">Display</button>
+        </div>
+        <div id="pattern">
+            <h3>Diamond Pattern</h3>
+            <p id="diamond"></p>
+            <button onclick="DiamodPattern()">Display</button>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="pattern.js"></script>
+    <script>
+        //Square pattern
+        var Squarepattern = function () {
+            var square = document.getElementById('square');
+            square.innerHTML = '';
+            for (let i = 0; i < 5; i++) {
+                for (let j = 0; j < 5; j++) {
+                    square.innerHTML += "*";
+                }
+                square.innerHTML += "<br>";
+            }
+        }
+
+
+        //Right Triangle Pattern
+        var rigntTriaglepattern = function () {
+            var rightTriangle = document.getElementById('rightTriangle');
+            rightTriangle.innerHTML = '';
+            for (let i = 0; i < 5; i++) {
+                for (let j = 0; j < 5; j++) {
+                    if (i >= j) {
+                        rightTriangle.innerHTML += "*";
+                    }
+                    else {
+                        rightTriangle.innerHTML += " ";
+                    }
+
+                }
+                rightTriangle.innerHTML += "<br>";
+            }
+        }
+
+        //Inverted Right Pattern
+        var invertedRightPattern = function () {
+            var invertedRight = document.getElementById('invertedRight');
+            invertedRight.innerHTML = '';
+            for (let i = 0; i < 5; i++) {
+                for (let j = 0; j < 5; j++) {
+                    if (i <= j) {
+                        invertedRight.innerHTML += "*";
+                    }
+                    else {
+                        invertedRight.innerHTML += " ";
+                    }
+
+                }
+                invertedRight.innerHTML += "<br>";
+            }
+        }
+
+        //pyramid pattern
+        var pyramidPattern = function () {
+            pyramid = document.getElementById('pyramid');
+            pyramid.innerHTML = '';
+
+            const rows = 5;
+            for (let i = 0; i < rows; i++) {
+                for (let j = 0; j < 2 * rows - 1; j++) {
+                    if(i+j<rows-1 || j-i >= rows)
+                    {
+                        pyramid.innerHTML +="&nbsp;"
+                    }
+                    else{
+                        pyramid.innerHTML +="*";
+                    }
+                }
+                pyramid.innerHTML +="<br>";
+            }
+        }
+
+        //Diamond pattern
+
+        var DiamodPattern = function (){
+            var diamond = document.getElementById("diamond");
+            diamond.innerHTML="";
+
+            let n = 5;
+            //upper part of the diamond
+            for(let i = 1;i<=n;i++){
+                let row = "&nbsp;".repeat(n-i)+"*".repeat(2*i-1)+"<br>";
+                diamond.innerHTML +=row;
+
+            }
+            //lower part of the diamond
+            for(let i = n-1; i>0; i--)
+            {
+                let row ="&nbsp;".repeat(n-i)+"*".repeat(2*i-1)+"<br>";
+                diamond.innerHTML +=row;
+            }
+        }
+
+    </script>
+</body>
+
+</html>
