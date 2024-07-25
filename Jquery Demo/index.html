@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Demo Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>jQuery Demo Project</h1>
+
+        <div id="selectors" class="section">
+            <h2>1. jQuery Selectors</h2>
+            <p class="selector-example">This is a paragraph with a class selector.</p>
+            <p id="selector-example">This is a paragraph with an ID selector.</p>
+            <input type="text" class="selector-example" value="Input with class selector">
+        </div>
+
+        <div id="events" class="section">
+            <!-- <h2>2. jQuery Event Methods</h2>
+            <button id="clickButton">Click Me</button>
+            <div id="hoverDiv">Hover over me</div> -->
+            <h2>2. jQuery Event Methods</h2>
+            <button id="clickButton">Click Me</button>
+            <div id="hoverDiv">Hover over me</div>
+            <button id="dblclickButton">Double Click Me</button>
+            <input type="text" id="keypressInput" placeholder="Press a key">
+            <input type="text" id="keydownInput" placeholder="Press a key down">
+            <input type="text" id="keyupInput" placeholder="Release a key/key up">
+            <select id="changeSelect">
+                <option value="Option 1">Option 1</option>
+                <option value="Option 2">Option 2</option>
+                <option value="Option 3">Option 3</option>
+            </select>
+        </div>
+
+        <div id="effects" class="section">
+            <h2>3. jQuery Effects</h2>
+            <button id="hideShowButton">Hide/Show</button>
+            <div id="hideShowDiv">Hide and Show Me</div>
+            
+            <button id="fadeButton">Fade In/Out</button>
+            <div id="fadeDiv">Fade Me</div>
+            
+            <button id="slideButton">Slide Up/Down</button>
+            <div id="slideDiv">Slide Me</div>
+            
+            <button id="animateButton">Animate</button>
+            <div id="animateDiv" style="width: 200px !important; background-color: green;">Animate Me</div>
+        </div>
+
+        <div id="contentAttributes" class="section">
+            <h2>4. Get & Set Content and Attributes</h2>
+            <p id="contentExample">This is some text.</p>
+            <button id="getContentButton">Get Content</button>
+            <button id="setContentButton">Set Content</button>
+            
+            <img id="imageExample" src="https://via.placeholder.com/150" alt="Placeholder Image">
+            <button id="getAttrButton">Get Src</button>
+            <button id="setAttrButton">Set Src</button>
+        </div>
+
+        <div id="addRemoveElements" class="section">
+            <h2>5. Add & Remove Elements</h2>
+            <ul id="myList">
+                <li>Item 1</li>
+                <li>Item 2</li>
+            </ul>
+            <button id="addElementButton">Add Element</button>
+            <button id="removeElementButton">Remove Element</button>
+        </div>
+
+        <div id="cssClasses" class="section">
+            <h2>6. Get & Set CSS Classes</h2>
+            <div id="classExample">CSS Class Example</div>
+            <button id="addClassButton">Add Class</button>
+            <button id="removeClassButton">Remove Class</button>
+            <button id="toggleClassButton">Toggle Class</button>
+        </div>
+
+        <div id="cssMethods" class="section">
+            <h2>7. css() Method</h2>
+            <div id="cssExample">CSS Method Example</div>
+            <button id="getCssButton">Get CSS</button>
+            <button id="setCssButton">Set CSS</button>
+        </div>
+
+        <div id="dimensions" class="section">
+            <h2>8. Dimension Methods</h2>
+            <div id="dimensionExample">Dimension Example</div>
+            <button id="getDimensionsButton">Get Dimensions</button>
+            <button id="setDimensionsButton">Set Dimensions</button>
+        </div>
+    </div>
+</body>
+</html>

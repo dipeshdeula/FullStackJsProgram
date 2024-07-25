@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.section {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+button {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#hoverDiv {
+    width: 100%;
+    height: 50px;
+    background-color: lightgray;
+    margin: 10px 0;
+    text-align: center;
+    line-height: 50px;
+}
+
+#hideShowDiv, #fadeDiv, #slideDiv, #dimensionExample {  
+    width: 100%;
+    height: 50px;
+    background-color: lightblue;
+    margin: 10px 0;
+    text-align: center;
+    line-height: 50px;
+    display: none;
+}
+
+#animateDiv {
+    position: relative; /* Ensure the element is positioned */
+}
+
+#classExample.active {
+    background-color: lightgreen;
+}
+
+#cssExample {
+    width: 100%;
+    height: 50px;
+    background-color: lightcoral;
+    margin: 10px 0;
+    text-align: center;
+    line-height: 50px;
+}
