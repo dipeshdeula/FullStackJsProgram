@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lion Club Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <!-- Include Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+</head>
+
+<body>
+    <!-- Top Notification Bar -->
+    <div class="home-page-notification show" style="background: #f88946;" data-once="home-page-notification">
+        <div class="container" style="color:#000000;">
+            <p>By donating to our <a
+                    href="https://www.lionsclubs.org/en/donate?utm_source=intruder-banner&utm_medium=link&utm_campaign=south-taipei-earthquake"
+                    data-uw-rm-brl="PR"
+                    data-uw-original-href="https://www.lionsclubs.org/en/donate?utm_source=intruder-banner&utm_medium=link&utm_campaign=south-taipei-earthquake">Disaster
+                    Relief Fund</a>, you can help families and communities devastated by earthquakes and other natural
+                disasters.</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <div class="header navbar navbar-expand-lg navbar-light bg-light">
+
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Lions Clubs International" class="logo">
+            </a>
+            <h4><span>Lion International</span></h4>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto " id="lowerNav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Our Impact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Get Involved</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Member Resource Center</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">LCIF</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Member Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="#">Join</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-warning" href="#">Donate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <main>
+        <div class="video">
+            <video autoplay loop muted
+                src="https://sidcupfamilygolf.com/wp-content/uploads/2023/08/SFG-Website-Header-Video-0823.mp4"></video>
+            <div class="video-overlay"></div>
+            <div class="container text-center text-white hero-text">
+                <h1 class="display-4">We are serving a world in need.</h1>
+                <p class="lead">One act of kindness at a time.</p>
+            </div>
+        </div>
+        
+    </main>
+    <div>
+        <h2>Slick Carousel Demo</h2>
+        <div class="carousel slick">
+            <div><img src="images/image1.jpg" alt="dipesh1"></div>
+            <div><img src="images/image2.jpg" alt="dipesh2"></div>
+            <div><img src="images/image3.jpg" alt="dipesh3"></div>
+        </div>
+    </div>
+    <h2>Lightbox Gallery</h2>
+    <div class="lightbox-gallery">
+        <a href="images/image1.jpg" data-lightbox="gallery" data-title="Dipesh Deula">
+            <img src="images/image1.jpg" alt="Thumbnail 1">
+        </a>
+        <a href="images/image2.jpg" data-lightbox="gallery" data-title="Dipesh Deula">
+            <img src="images/image2.jpg" alt="Thumbnail 2">
+        </a>
+        <a href="images/image3.jpg" data-lightbox="gallery" data-title="Dipesh Deula">
+            <img src="images/image3.jpg" alt="Thumbnail 3">
+        </a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- slick and lightbox jquery -->
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include Slick JS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Include Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+   
+</body>
+
+</html>
