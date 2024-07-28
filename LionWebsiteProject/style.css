@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+   
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+
+.home-page-notification {
+    padding: 10px 0;
+}
+
+.logo {
+    max-height: 60px;
+}
+
+.video {
+    position: relative;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+.video-overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.hero-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+.hero-text p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color:#f88946;
+}
+
+#lowerNav {
+    display: inline-flex;
+    position: relative;
+    font-weight: bold;
+    margin-top: 6.5rem;
+    margin-left: -7.5rem;
+    justify-content: space-between;
+
+}
+
+/* slick and lightbox css */
+.carousel img {
+    width: 250px;
+    height: 250px;
+}
+.lightbox-gallery img {
+    width: 150px;
+    height: auto;
+    margin: 10px;
+}
