@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+
 //for carousel image
 $(document).ready(function () {
   $("cat-gallery").slick({
