@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CatPhotoApp</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- Include Slick CSS -->
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
@@ -164,6 +166,32 @@
 
         </section>
 
+        <section class="blog-section">
+            <h2>Cat Blog</h2>
+            <div class="blog-cards">
+                <article class="blog-card">
+                    <img src="https://images.pexels.com/photos/4347501/pexels-photo-4347501.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Cat 1">
+                    <h3>Introduction to Caring for Your First Indie Cat</h3>
+                    <p>Cats are known to be highly receptive, empathetic, and intelligent animals.</p>
+                    <a href="blog1.html" class="read-more">Read More</a>
+                </article>
+
+                <article class="blog-card">
+                    <img src="https://images.pexels.com/photos/3885948/pexels-photo-3885948.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Cat 2">
+                    <h3>The Ultimate Guide to Catnip - What is it and how to use it safely</h3>
+                    <p>Learn about catnip, its effects on cats, and how to use it safely.</p>
+                    <a href="blog2.html" class="read-more">Read More</a>
+                </article>
+
+                <article class="blog-card">
+                    <img src="https://images.pexels.com/photos/16773735/pexels-photo-16773735/free-photo-of-close-up-of-cat.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Cat 3">
+                    <h3>Easy and Helpful Tips on How to Bathe a Cat and Clean Their Ears</h3>
+                    <p>Get practical tips on how to bathe your cat and keep their ears clean.</p>
+                    <a href="blog3.html" class="read-more">Read More</a>
+                </article>
+            </div>
+        </section>
+
         <center>
             <h2>Cat Photos</h2>
 
@@ -188,57 +216,75 @@
         </section>
     </center>
 
-        <!-- <section>
-            <h2>Cat Lists</h2>
-            <h3>Things cats love:</h3>
-            <ul>
-                <li>cat nip</li>
-                <li>laser pointers</li>
-                <li>lasagna</li>
-            </ul>
-            <figure>
-                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
-                    alt="A slice of lasagna on a plate.">
-                <figcaption>Cats <em>love</em> lasagna.</figcaption>
-            </figure>
-            <h3>Top 3 things cats hate:</h3>
-            <ol>
-                <li>flea treatment</li>
-                <li>thunder</li>
-                <li>other cats</li>
-            </ol>
-            <figure>
-                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
-                    alt="Five cats looking around a field.">
-                <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
-            </figure>
-        </section>
-        <section>
-            <h2>Cat Form</h2>
-            <form action="https://freecatphotoapp.com/submit-cat-photo">
-                <fieldset>
-                    <legend>Is your cat an indoor or outdoor cat?</legend>
-                    <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
-                    <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
-                </fieldset>
-                <fieldset>
-                    <legend>What's your cat's personality?</legend>
-                    <input id="loving" type="checkbox" name="personality" value="loving" checked> <label
-                        for="loving">Loving</label>
-                    <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
-                    <input id="energetic" type="checkbox" name="personality" value="energetic"> <label
-                        for="energetic">Energetic</label>
-                </fieldset>
-                <input type="text" name="catphotourl" placeholder="cat photo URL" required>
-                <button type="submit">Submit</button>
-            </form>
-        </section>
+       
+    <section>
+        <h2>Cat Form</h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+            <fieldset>
+                <legend>Cat Details</legend>
+    
+                <label for="catname">Cat's Name:</label>
+                <input type="text" id="catname" name="catname" placeholder="Enter your cat's name" required>
+    
+                <label for="catage">Cat's Age:</label>
+                <input type="number" id="catage" name="catage" placeholder="Enter your cat's age" required>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Is your cat an indoor or outdoor cat?</legend>
+                <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+                <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+            </fieldset>
+    
+            <fieldset>
+                <legend>What's your cat's personality?</legend>
+                <label><input id="loving" type="checkbox" name="personality" value="loving" checked> Loving</label>
+                <label><input id="lazy" type="checkbox" name="personality" value="lazy"> Lazy</label>
+                <label><input id="energetic" type="checkbox" name="personality" value="energetic"> Energetic</label>
+            </fieldset>
+    
+            <label for="catphotourl">Cat Photo URL:</label>
+            <input type="url" id="catphotourl" name="catphotourl" placeholder="Enter the URL of your cat's photo" required>
+    
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    
     </main>
-    <footer>
-        <p>
-            No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
-        </p>
-    </footer> -->
+   <footer>
+    <div class="footer-content">
+        <div class="social-media">
+            <h3>Follow Us</h3>
+            <a href="https://www.facebook.com/profile.php?id=100076440164466" target="_blank" class="social-icon facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/dipesh-deula-245608258/" target="_blank" class="social-icon linkedin">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.instagram.com/deula_dipesh/" target="_blank" class="social-icon instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-about">
+            <h3>About This Blog</h3>
+            <p>This blog is dedicated to all cat lovers. We share tips, stories, and advice to help you take better care of your feline friends.</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 CatPhotoApp. All rights reserved.</p>
+    </div>
+</footer>
+
+
 
     <!-- Include jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
