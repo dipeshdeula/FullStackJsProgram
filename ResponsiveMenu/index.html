@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BHOJANALAYA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="row d-flex justify-content-between align-items-center p-8 bg-dark text-white">
+        <img src="https://i.pinimg.com/564x/82/ba/7d/82ba7db3760b88da021a340ee9eb861e.jpg" alt="Logo" class="logo1">
+        <h1 class="text-center">BHOJANALAYA</h1>
+        <img src="https://i.pinimg.com/236x/cb/a6/88/cba688058baffbf0b48c562ab7444a92.jpg" alt="Logo" class="logo2">
+    </header>
+
+    <!-- Sidebar Menu and Content -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar Menu -->
+            <nav class="col-md-2 bg-light p-3">
+                <select class="form-select mb-3" aria-label="Menu 1">
+                    <option selected>Menu 1</option>
+                    <option value="samosa">Samosa</option>
+                    <option value="puri">Puri</option>
+                    <option value="tarkari">Tarkari</option>
+                </select>
+                <select class="form-select mb-3" aria-label="Menu 2">
+                    <option selected>Menu 2</option>
+                    <option value="jerry">Jerry</option>
+                    <option value="gulabJamun">Gulab Jamun</option>
+                    <option value="rasbari">Rasbari</option>
+                </select>
+                <select class="form-select mb-3" aria-label="Menu 3">
+                    <option selected>Menu 3</option>
+                    <option value="biryani">Biryani</option>
+                    <option value="dhedoGundruk">Dhedo Gundruk</option>
+                    <option value="choila">Choila</option>
+                </select>
+                <select class="form-select mb-3" aria-label="Menu 4">
+                    <option selected>Menu 4</option>
+                    <option value="khajaSet">Khaja Set</option>
+                    <option value="buffMomo">Buff MOMO</option>
+                    <option value="chickenMomo">Chicken MOMO</option>
+                </select>
+            </nav>
+
+            <!-- Main Content -->
+            <main class="col-md-8">
+                <!-- Carousel -->
+                <div id="carouselExampleIndicators" class="carousel slide my-4" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://i.pinimg.com/236x/57/78/f4/5778f4a3c1554a60a9673c14be613c70.jpg" class="d-block w-100" alt="Carousel Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://i.pinimg.com/236x/34/f4/8f/34f48f5c56c938642b80b0555e5adf82.jpg" class="d-block w-100" alt="Carousel Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://i.pinimg.com/236x/05/5e/4e/055e4e82d548029f91d96c30499341fb.jpg" class="d-block w-100" alt="Carousel Image 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <!-- Image Grid -->
+                <div class="row">
+                    <div class="col-6 col-md-4 col-lg-3 mb-4">
+                        <img src="https://i.pinimg.com/474x/8b/b6/e8/8bb6e812b83d5f196155d25785c1e2dc.jpg" class="card img-fluid" alt="Food Image 1">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 mb-4">
+                        <img src="https://i.pinimg.com/236x/b9/91/94/b991947f736aee05a9a4e9c891af49ef.jpg" class="card img-fluid" alt="Food Image 2">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 mb-4">
+                        <img src="https://i.pinimg.com/236x/91/40/8b/91408b73ba74750df808cbe0fd8d4f80.jpg" class="card img-fluid" alt="Food Image 3">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 mb-4">
+                        <img src="https://i.pinimg.com/236x/1c/5a/89/1c5a895788610aae0c025fb9f2c79cb9.jpg" class="card img-fluid" alt="Food Image 4">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 mb-4">
+                        <img src="https://i.pinimg.com/236x/e0/89/78/e089786326df1b9125cfcc553bd92ab7.jpg" class="card img-fluid" alt="Food Image 5">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 mb-4">
+                        <img src="https://i.pinimg.com/236x/b2/22/e5/b222e55a32c0e801694b10b5696eecb4.jpg" class="card img-fluid" alt="Food Image 6">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 mb-4">
+                        <img src="https://i.pinimg.com/236x/84/5f/a8/845fa8e78b04ae9f688da4217eaa0902.jpg" class="card img-fluid" alt="Food Image 7">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 mb-4">
+                        <img src="https://i.pinimg.com/236x/a0/04/3e/a0043e49da863a0d0e75e72194f7942d.jpg" class="card img-fluid" alt="Food Image 8">
+                    </div>
+                </div>
+            </main>
+
+            <!-- Sidebar Images -->
+            <aside class="col-md-2 bg-light p-3 ">
+                <img src="https://i.pinimg.com/236x/80/35/60/803560020f0f772bb12862e1eb2f50c0.jpg" class="img-fluid mb-2" alt="Image 1">
+                <img src="https://i.pinimg.com/236x/e5/0c/d1/e50cd1d3df63eba79e1ec59660d16b65.jpg" class="img-fluid mb-2" alt="Image 2">
+                <img src="https://i.pinimg.com/236x/6c/3b/10/6c3b10c95f7b8a71c8fbd59c80429c5c.jpg" class="img-fluid mb-2" alt="Image 3">
+                <img src="https://i.pinimg.com/236x/89/9c/93/899c938f837d7e69d0505c01caa5f1de.jpg" class="img-fluid mb-2" alt="Image 4">
+            </aside>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-4 mt-4">
+        <p>Contact us: email@example.com</p>
+        <p>Follow us on social media</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
