@@ -15,5 +15,15 @@ navBar.forEach(function (a){
     a.addEventListener("click", function(){
         navCollapse.classList.remove("show");
     })
-})
- 
+});
+
+//for carousel image
+$(document).ready(function(){
+    $(".gallery_wrapper").slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+    });
+});
