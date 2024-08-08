@@ -336,6 +336,80 @@ p{
     color: inherit;
 }
 
+/* Contact form styles */
+
+.contact h3{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.contact form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+
+}
+
+form:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.form-floating {
+    margin-bottom: 15px;
+}
+
+.form-floating input,
+.form-floating textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.form-floating input:focus,
+.form-floating textarea:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.form-floating label {
+    font-weight: bold;
+    color: #333;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--secondary-color);
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.invalid-feedback,
+.valid-feedback {
+    display: none;
+}
+
+.is-invalid ~ .invalid-feedback {
+    display: block;
+    color: #dc3545;
+}
+
+.is-valid ~ .valid-feedback {
+    display: block;
+    color: #28a745;
+}
+
+
+
 /* Footer section */
 
 footer {
