@@ -210,7 +210,7 @@ p{
     vertical-align: middle;
     align-self: center;
 }
-
+/* 
 .banner_wrapper .banner-content h2::after{
     content:'';
     width:60%;
@@ -221,6 +221,10 @@ p{
     background: var(--bg-black);
     overflow-x:hidden;
 
+} */
+
+.animate-text{
+    font-size: 1.275rem;
 }
 
 .nav-link i{
@@ -233,6 +237,7 @@ p{
 .nav-link i:hover {
     color: var(--bs-primary); /* Use your primary color variable or replace with the desired color code */
 }
+
 
 /* about section */
 
