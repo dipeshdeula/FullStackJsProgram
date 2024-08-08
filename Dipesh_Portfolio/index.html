@@ -7,16 +7,13 @@
     <title>Dipesh CV's</title>
 
     <!-- faviicon -->
-    <link rel="icon" type="images/png" href="images/">
+    <link rel="icon" type="images/png" href="images/DD_logo.png">
 
     <!-- Bootstrap 5 CDN Links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
-
-
-
 
     <!-- Custom File's Link -->
     <link rel="stylesheet" href="styles.css">
@@ -38,7 +35,10 @@
     <header class="header_wrapper">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top ">
             <div class="container">
-                <a href="#" class="navbar-brand">Dipesh<span>CV</span></span></a>
+                <a href="#" class="navbar-brand">
+                    <!-- Dipesh<span>CV</span></span> -->
+                     <img decoding="async" src="images/DD_logo.png" alt="DD_logo" class="img-fluid">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
                     <div class="navbar-toggler-icon"></div>
@@ -137,9 +137,13 @@
                             <!-- About Me Content -->
                             <div class="tab-pane fade show active mt-4" id="about-content" role="tabpanel"
                                 aria-labelledby="about-tab">
-                                <h3>Let's<br>Introduce<br>Myself</h3>
-                                <p>Hello World! I am Dipesh Deula, a passionate tech enthusiast who loves the bugs.</p>
-                                <p>I am currently studying to become a Full Stack Developer.</p>
+                                <h3>Let's Introduce Myself</h3>
+                                <p>Hello World ! I'm Dipesh Deula, a dedicated <span class="text-bold text-primary">Full-Stack Developer</span> currently 
+                                studying in the 5th semester of my Bachelor's in Computer Applications at Hetauda School of Management and Social Sciences, Hetauda, Makawanpur
+                                </p>
+                                <p>I excel in bringing creative ideas to life through code, firmly believing that 
+                                    <span class="text-primary">"Discipline > Motivation"</span> is the key to success.Check out my projects to see my work in action,
+                                     and don't hesitate to connect with me for collaboration opportunities.</p>
                                 <a href="#" class="main-btn primary-btn mt-4">Download CV</a>
                             </div>
                             <!-- Skills Content -->
@@ -185,14 +189,50 @@
                             <!-- Experience Content -->
                             <div class="tab-pane fade mt-4" id="experience-content" role="tabpanel"
                                 aria-labelledby="experience-tab">
-                                <h3>My Experience</h3>
-                                <p>Placeholder content for experience. You can update this section with your actual
-                                    experience.</p>
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <h3 >My Experience</h3>
+                                        <div class="experience-item">
+                                            <div class="row">
+                                                <div class="custom-line border-top my-3"></div>
+                                                <div class="col-md-4">
+                                                    <div class="date">2076-2078</div>
+                                                    <div class="position">Content Writer</div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="company">Hetauda Sandesh</div>
+                                                    <div class="address">Hetauda-4, Makwanpur</div>
+                                                </div>
+                                                <div class="custom-line border-top my-3"></div>
+                                              
+                                                <div class="col-md-4">
+                                                    <div class="date">2080-present</div>
+                                                    <div class="position">President</div>
+                                                </div>
+
+                                                <div class="col-md-8">
+                                                    <div class="company">IT Club of HSMSS</div>
+                                                    <div class="address">Hetauda-4, Makwanpur</div>
+                                                </div>
+                                                <div class="custom-line border-top my-3"></div>
+                                                                                              <div class="col-md-4">
+                                                    <div class="date">2081-present</div>
+                                                    <div class="position">Backend Developer Intern</div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="company">KutumbaTech</div>
+                                                    <div class="address">Hetauda-4, Makwanpur</div>
+                                                </div>
+                                                <div class="custom-line border-top my-3"></div>
+                                                                                          </div>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
 
         <!-- end of about section -->
@@ -250,8 +290,7 @@
                     </a>
                 </div>
                 <div class="card">
-                    <a href="images/UI _Ux certificate.png" data-lightbox="gallery"
-                        data-title="UI _Ux certificate">
+                    <a href="images/UI _Ux certificate.png" data-lightbox="gallery" data-title="UI _Ux certificate">
                         <img src="images/UI _Ux certificate.png" alt="UI _Ux certificate">
                     </a>
                 </div>
@@ -260,13 +299,27 @@
 
         <section class="contact bg-dark" id="contact">
             <div class="container ">
-                <div class="row justify-content-center">
+                <div class="row justify-content-center flex-column flex-md-row">
+                    <div class="col-md-6 text-center">
+                        <div class="card-group">
+                            <div class="card" style="width:150px">
+                                <h2 class="card-header bg-primary text-light">Have a great idea?</h2>
+                                <div class="card-body">
+                                    <img src="images/contactDipesh.png" alt="contact_Dipesh" class="img-fluid">
+                                    <h2 class="card-title">Let's Talk About Your Project</h2>
+                                </div>
+                               <button class="card-footer main-btn primary-btn">Contact ME</button>
+
+                            </div>
+                          
+                        </div>
+                    </div>
                     <div class="col-md-6 text font-primary ">
-                        <h3 class="text-light">Contact Details</h3>
+                        <h3 class="text-light">Your Details</h3>
                         <form action="#" novalidate>
-                           
+
                             <div class="form-floating">
-                                <input type="email" id="email" class="form-control"  />
+                                <input type="email" id="email" class="form-control" />
                                 <label for="email">Email</label>
                                 <div class="invalid-feedback">Invalid email</div>
                                 <div class="valid-feedback">Correct email</div>
@@ -288,7 +341,7 @@
                             </div>
 
                             <div class="form-floating mt-3">
-                                <input type="text" class="form-control" id="projectTitle"  />
+                                <input type="text" class="form-control" id="projectTitle" />
                                 <label for="projectTitle" class="form-label">Project Title</label>
                             </div>
 
@@ -312,7 +365,7 @@
                             </div>
 
                             <input type="submit" class="form-control mt-3 mx-auto btn-primary" value="Submit">
-                        
+
 
                         </form>
 

@@ -111,7 +111,7 @@ h1{
 
 h2{
     font-size: 2.5rem;
-    line-height: 3.4375;
+    line-height: 3.4375rem;
     font-weight: 500;
     color:var(--text-black);
     margin-bottom:1.5625rem;
@@ -120,7 +120,7 @@ h2{
 
 h3{
     font-size: 2.25rem;
-    line-height: 3.125;
+    line-height: 3.125rem;
     font-weight: 700;
     color:var(--text-black);
     margin-bottom:0.9375rem;
@@ -149,11 +149,17 @@ p{
     transition: all .2s linear;
 }
 
-.header_wrapper .navbar-brand span{
+/* .header_wrapper .navbar-brand span{
     color:var(--primary-color);
     font-family: var(--primary-font);
     font-size: 2.25rem;
     font-weight: 600;
+} */
+
+
+.navbar-brand img {
+    height: 5rem; /* Adjust the height as needed */
+    width: auto; /* Maintain aspect ratio */
 }
 
 .header_wrapper .navbar-toggler:focus{
@@ -161,7 +167,7 @@ p{
 }
 
 .header_wrapper .nav-item{
-    margin: 0 1.625rem;
+    margin: 0 0.625rem;
 }
 
 .header_wrapper .nav-item .nav-link{
@@ -233,7 +239,7 @@ p{
 .about_wrapper h3{
     color: var(--bg-white);
     font-size: 2rem;
-    font-weight: bold;
+ 
 }
 
 .about_wrapper .nav-tabs .nav-link.active{
@@ -247,6 +253,7 @@ p{
 }
 
 .about_wrapper .tab-content p{
+    font-family: var(--primary-font);
     padding-top: 20px;
     color:var(--bg-white)
 }
@@ -286,6 +293,36 @@ p{
     background-color: var(--primary-color);
     line-height: 20px;
     text-align: center;
+}
+
+.experience-item{
+    padding: 15px;
+    border-bottom: 1px solid var(--bg-light);
+
+
+}
+
+.date{
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.position{
+    font-style: italic;
+    color:var(--secondary-text);
+   
+}
+
+.company{
+    font-weight: bold;
+    color: var(--bg-light);
+}
+.address{
+   color: var(--bg-light);
+}
+
+.custom-line {
+    width: 100%; 
+    border-width: 10px;
 }
 
 /* gallery section */
