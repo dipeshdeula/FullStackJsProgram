@@ -28,4 +28,11 @@ $(document).ready(function(){
     });
 });
 
-//animation
+//video carousel
+$('#videoCarousel').on('slide.bs.carousel', function () {
+    // Stop video playback on slide change
+    $(this).find('iframe').each(function () {
+        $(this).attr('src', $(this).attr('src'));
+    });
+});
+

@@ -217,12 +217,43 @@ p {
     overflow-x:hidden;
 
 } */
- 
 
-.animate-text {
+/* css text typing animation */
+
+/* css end of text typing animation */
+
+.animate-text{
   font-size: 1.275rem;
 }
 
+.animate-full-text {
+  font-size: 1.275rem;
+  letter-spacing: 0.15rem;
+  font-family: var(--primary-font);
+  border-right: 5px solid var(--text-gray);
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 5s steps(27) 1s infinite alternate, cursor-blink 0.75s step-end infinite;
+}
+
+/* cursor blinkgin */
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+    
+  }
+}
+/*typing effect */
+@keyframes typing {
+  from {
+    width: 0ch;
+  
+  }
+  to{
+    width: 27ch;
+  }
+}
 .nav-link i {
   color: var(--bg-black);
   margin-right: 5px;
@@ -353,7 +384,6 @@ p {
 }
 
 .contact .card-group {
- 
   margin-right: 2rem;
   height: 20rem;
   width: 100%;
@@ -381,6 +411,17 @@ p {
   text-decoration: none;
   color: inherit;
 }
+
+/* Ensure the carousel and videos are responsive */
+#video-carousel .carousel-item {
+  height: 400px; /* Adjust the height as needed */
+}
+
+.embed-responsive-16by9 {
+  width: 100%;
+  height: 100%;
+}
+
 
 /* Contact form styles */
 
