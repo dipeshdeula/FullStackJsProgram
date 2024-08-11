@@ -36,3 +36,9 @@ $('#videoCarousel').on('slide.bs.carousel', function () {
     });
 });
 
+
+//date integration
+$(document).ready(function(){
+    $("#date").datepicker();
+    });
+
